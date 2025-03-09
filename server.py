@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 API_KEY = os.getenv("GROQ_KEY")
-
+VM_IP = os.getenv("VM_IP")
 
 import os
 app = Flask(__name__)
@@ -104,4 +104,5 @@ def zetaBot():
 def root():
     return "The ROOT page !"
 
-app.run(host='0.0.0.0')
+app.run(host=VM_IP)
+
