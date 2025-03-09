@@ -104,4 +104,4 @@ def zetaBot():
 def root():
     return "The ROOT page !"
 
-app.run()
+app.run(host='0.0.0.0')
