@@ -104,4 +104,4 @@ def zetaBot():
 def root():
     return "The ROOT page !"
 
-app.run(debug=True)
+app.run(port=10000)
