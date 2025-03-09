@@ -104,4 +104,4 @@ def zetaBot():
 def root():
     return "The ROOT page !"
 
-app.run(port=10000)
+app.run(host="https://zeta-server.onrender.com/",port=10000)
