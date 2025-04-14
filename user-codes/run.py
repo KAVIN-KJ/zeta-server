@@ -1,13 +1,21 @@
-def greet(name):
-    print("Hello, " + name)
+n = int(input("Enter the number of rows: \n"))
 
-greet("Alice")
+# Print the upper half of the rhombus
+for i in range(n):
+    # Print spaces before the asterisks
+    for j in range(n - i - 1):
+        print(" ", end=" ")
+    # Print the asterisks
+    for k in range(2 * i + 1):
+        print("*", end=" ")
+    print()
 
-for i in range(5):
-    print("Iteration:", i)
-
-x = 10
-if x == 10:
-    print("x is ten")
-
-print("This will cause an error")
+# Print the lower half of the rhombus
+for i in range(n - 2, -1, -1):
+    # Print spaces before the asterisks
+    for j in range(n - i - 1):
+        print(" ", end=" ")
+    # Print the asterisks
+    for k in range(2 * i + 1):
+        print("*", end=" ")
+    print()
